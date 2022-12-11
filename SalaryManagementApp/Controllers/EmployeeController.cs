@@ -23,9 +23,14 @@ namespace SalaryManagementApp.Controllers;
         [HttpPost]
         public IActionResult EmployeeAdd(Salary s)
         {
-            
-
             return View();
+        }
+
+        //GET
+        public IActionResult EmployeeHome()
+        {
+            return View();
+
         }
     }
 

@@ -20,8 +20,10 @@ namespace SalaryManagementApp.Models
 
 		public float Salary { get; set; }
 
-		public ClassOfEmp classOfEmp { get; set;}
+        public MedAllow medAllow { get; set; }
 
-	}
+        public TravAllow travAllow { get; set; }
+
+    }
 }
 

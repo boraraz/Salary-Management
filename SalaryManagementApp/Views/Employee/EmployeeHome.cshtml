@@ -1,0 +1,36 @@
+﻿@model Employee;
+@{
+    ViewData["Title"] = "Employee Home Page";
+}
+
+
+
+<div>
+    <div class="text-center">
+        <h1 style="padding-bottom:8%; padding-top:15px" class="display-4">Employees</h1>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID number</th>
+                <th scope="col">Name</th>
+                <th scope="col">Designation</th>
+                <th scope="col">Salary</th>
+                <th scope="col">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="EmployeeAdd">Employee Add</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="col">idfln</td>
+                <td scope="col">name fln</td>
+                <td scope="col">desig fln</td>
+                <td scope="col">salary fln</td>
+                <th scope="col">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="EmployeeAdd">More Info</a>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
