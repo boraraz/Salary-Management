@@ -1,10 +1,10 @@
-﻿@model Employee;
+﻿@model IEnumerable<Employee>;
 @{
     ViewData["Title"] = "Employee Home Page";
 }
 
 
-
+<a class="btn justify-content-start" style="text-decoration: none; color: white; background-color: green;" asp-controller="HomePage" asp-action="HomePage">Back</a>
 <div>
     <div class="text-center">
         <h1 style="padding-bottom:8%; padding-top:15px" class="display-4">Employees</h1>
@@ -16,21 +16,30 @@
                 <th scope="col">Name</th>
                 <th scope="col">Designation</th>
                 <th scope="col">Salary</th>
+                <th scope="col">Net Salary</th>
+                <th scope="col">Total Salary</th>
                 <th scope="col">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="EmployeeAdd">Employee Add</a>
+                    <a class="btn" style="color: white; background-color: green; text-decoration: none" asp-area="" asp-controller="Employee" asp-action="EmployeeAdd">Employee Add</a>
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td scope="col">idfln</td>
-                <td scope="col">name fln</td>
-                <td scope="col">desig fln</td>
-                <td scope="col">salary fln</td>
-                <th scope="col">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="EmployeeAdd">More Info</a>
-                </th>
-            </tr>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td scope="col">@obj.EId</td>
+                    <td scope="col">@obj.Name</td>
+                    <td scope="col">@obj.Designation.ToShortDateString()</td>
+                    <td scope="col">@obj.Salary</td>
+                    <td scope="col">@obj.NetSalary</td>
+                    <td scope="col">@obj.TotalSalary</td>
+                    <td scope="col">
+                        <a class="btn" style="color: white; background-color: blue; text-decoration: none" asp-area="" asp-controller="Employee" asp-action="EmployeeInfo" asp-route-EId="@obj.EId">More Info</a>
+                        <a class="btn" style="color: black; background-color: yellow; text-decoration: none" asp-area="" asp-controller="Employee" asp-action="EmployeeEdit" asp-route-EId="@obj.EId">Edit</a>
+                        <a class="btn" style="color: white; background-color: red; text-decoration: none" asp-area="" asp-controller="Employee" asp-action="EmployeeDelete" asp-route-EId="@obj.EId">Delete</a>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>

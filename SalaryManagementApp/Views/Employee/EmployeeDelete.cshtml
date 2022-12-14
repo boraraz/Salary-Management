@@ -1,0 +1,43 @@
+﻿@model Employee;
+@{
+    ViewData["Title"] = "Employe Delete Page";
+}
+
+
+
+<a class="btn justify-content-start" style="text-decoration: none; color: navajowhite; background-color: #DF7861;" asp-controller="Employee" asp-action="EmployeeHome">Back</a>
+<form method="post" asp-action="Delete">
+    <input asp-for="EId" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 style="color:saddlebrown;">Delete Employee</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="DOB"></label>
+            <input asp-for="DOB" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Designation"></label>
+            <input asp-for="Designation" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Salary"></label>
+            <input asp-for="Salary" disabled class="form-control" />
+        </div>
+        <button type="submit" class="btn" style="width: 150px; color: navajowhite; background-color: #DF7861;">Delete</button>
+    </div>
+</form>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

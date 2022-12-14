@@ -4,45 +4,47 @@
 }
 
 
-
+<a class="btn justify-content-start" style="text-decoration: none; color: saddlebrown; background-color: #A6D1E6; " asp-controller="Employee" asp-action="EmployeeHome">Back</a>
 <form method="post">
-    <div class="text-center">
-        <h1 style="padding-bottom:8%; padding-top:15px" class="display-4">Employee Add</h1>
-        <div style="margin-inline:20%">
-            <div class="mb-2 row">
-                <label class="col-sm-2 col-form-label text-end">Name:</label>
-                <div class="col-sm-10">
-                    <input asp-for="Name" type="text" class="form-control">
-                </div>
+    <div class="text-start">
+        <div class="border p-3 mt-4">
+            <div class="row pb-2">
+                <h2 style="color:saddlebrown;">Employee Add</h2>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <label class="text-center">Name</label>
+                <input asp-for="Name" type="text" class="form-control">
                 <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
 
-                <label class="col-sm-2 col-form-label text-end">Address:</label>
-                <div class="col-sm-10">
-                    <input asp-for="Address" type="text" class="form-control">
-                </div>
+            <div class="mb-3">
+                <label class="text-center">Address</label>
+                <input asp-for="Address" type="text" class="form-control">
                 <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
 
-                <label class="col-sm-2 col-form-label text-end">Address:</label>
-                <div class="col-sm-10">
-                    <input asp-for="DOB" type="date" class="form-control">
-                </div>
+            <div class="mb-3">
+                <label class="text-center">Date of Birth</label>
+                <input asp-for="DOB" type="date" class="form-control">
                 <span asp-validation-for="DOB" class="text-danger"></span>
+            </div>
 
-                <label class="col-sm-2 col-form-label text-end">Designation:</label>
-                <div class="col-sm-10">
-                    <input asp-for="Designation" type="date" class="form-control">
-                </div>
+            <div class="mb-3">
+                <label class="text-center">Designation</label>
+                <input asp-for="Designation" type="date" class="form-control">
                 <span asp-validation-for="Designation" class="text-danger"></span>
+            </div>
 
-                <label class="col-sm-2 col-form-label text-end">Salary:</label>
-                <div class="col-sm-10">
-                    <input asp-for="Salary" type="text" class="form-control">
-                </div>
+            <div class="mb-3">
+                <label class="text-center">Salary</label>
+                <input asp-for="Salary" type="text" class="form-control">
                 <span asp-validation-for="Salary" class="text-danger"></span>
             </div>
-            <div>
-                <button type="submit" class="btn" style="color: white; background-color: blue; text-decoration: none">Emp Add</button>
-            </div>
         </div>
+        <div>
+            <button type="submit" class="btn" style="color: white; background-color: blue; text-decoration: none">Emp Add</button>
+        </div>
+
     </div>
 </form>

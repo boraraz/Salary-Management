@@ -1,25 +1,41 @@
 ﻿<Properties StartupConfiguration="{65FED33C-5A3C-4256-8B14-96D0745AEB92}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/boraraz/Documents/GitHub/Salary-Management/SalaryManagementApp/Controllers/SalaryController.cs" relfile="SalaryManagementApp/Controllers/SalaryController.cs" line="110" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SalaryManagementApp/Views/HomePage/HomePage.cshtml">
+    <Files>
+      <File FileName="SalaryManagementApp/Views/Home/Index.cshtml" Line="17" Column="160" />
+      <File FileName="SalaryManagementApp/Views/HomePage/HomePage.cshtml" Line="1" Column="1" />
+      <File FileName="SalaryManagementApp/Views/Login/Login.cshtml" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SalaryManagementApp" expanded="True">
             <Node name="SalaryManagementApp" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Employee" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="HomePage" expanded="True">
+                  <Node name="HomePage.cshtml" selected="True" />
+                </Node>
+                <Node name="Login" expanded="True" />
+                <Node name="Salary" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>obj.Id</Value>
-          <Value>_db.Inventory.Select(</Value>
         </State>
       </Pad>
     </Pads>

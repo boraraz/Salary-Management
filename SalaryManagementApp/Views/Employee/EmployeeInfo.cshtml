@@ -1,0 +1,54 @@
+﻿@model Employee;
+@{
+    ViewData["Title"] = "Employee Info Page";
+}
+
+
+
+<a class="btn justify-content-start" style="text-decoration: none; color: navajowhite; background-color: #DF7861;" asp-controller="Employee" asp-action="EmployeeHome">Back</a>
+<form method="post" asp-action="Delete">
+    <input asp-for="EId" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 style="color:saddlebrown;">Employee Info</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label>Employee ID</label>
+            <input asp-for="EId" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Name</label>
+            <input asp-for="Name" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Address</label>
+            <input asp-for="Address" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Date of Birth</label>
+            <input asp-for="DOB" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Designation</label>
+            <input asp-for="Designation" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Salary</label>
+            <input asp-for="Salary" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>NetSalary</label>
+            <input asp-for="NetSalary" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Yearly Bonus</label>
+            <input asp-for="Bonus" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Total Salary</label>
+            <input asp-for="TotalSalary" disabled class="form-control" />
+        </div>
+
+    </div>
+</form>

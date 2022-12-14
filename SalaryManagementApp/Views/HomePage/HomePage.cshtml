@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2>Welcome to Salary Management App</h2>
+
+    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <a class="btn" style="color: white; background-color: blue; text-decoration: none; margin-top: 12px !important; margin-bottom: 12px !important;" asp-area="" asp-controller="Employee" asp-action="EmployeeHome">Employees</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn" style="color: white; background-color: blue; text-decoration: none; margin-bottom: 12px !important;" asp-area="" asp-controller="Salary" asp-action="SalarySettings">Salary Settings</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn justify-content-start" style="text-decoration: none; color: white; background-color: red; " asp-controller="Home" asp-action="Index">Log Out</a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -3,27 +3,29 @@
     ViewData["Title"] = "Login Page";
 }
 
+<a class="btn justify-content-start" style="text-decoration: none; color: white; background-color: green; " asp-controller="Home" asp-action="Index">Back</a>
 <form method="post">
-    <div class="text-center">
-        <h1 style="padding-bottom:8%; padding-top:15px" class="display-4">Login</h1>
-        <div style="margin-inline:20%">
-            <div class="mb-2 row">
-                <label class="col-sm-2 col-form-label text-end">Maill:</label>
-                <div class="col-sm-10">
-                    <input asp-for="Mail" type="text" class="form-control">
-                </div>
-                <span asp-validation-for="Mail" class="text-danger"></span>
-
-                <label class="col-sm-2 col-form-label text-end">Pass:</label>
-                <div class="col-sm-10">
-                    <input asp-for="password" type="password" class="form-control">
-                </div>
-                <span asp-validation-for="password" class="text-danger"></span>
+    <div class="text-start">
+        <div class="border p-3 mt-4">
+            <div class="row pb-2">
+                <h2 style="color:saddlebrown;">Login</h2>
+                <hr />
             </div>
-            <div>
-                <button type="submit" class="btn" style="color: white; background-color: blue; text-decoration: none">Login</button>
+            <div class="mb-3">
+                <label>Mail:</label>
+                <input asp-for="Mail" type="text" class="form-control">
+                <span asp-validation-for="Mail" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Pass:</label>
+                <input asp-for="Password" type="password" class="form-control">
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
         </div>
+        <div>
+            <button type="submit" class="btn" style="color: white; background-color: blue; text-decoration: none">Login</button>
+        </div>
+
     </div>
 </form>
 

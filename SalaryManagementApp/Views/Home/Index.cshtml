@@ -3,15 +3,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Welcome to Salary Management App</h1>
 
-<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-    <ul class="navbar-nav flex-grow-1">
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Login">Login</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="SignUp">Signup</a>
-        </li>
-    </ul>
+<div class="text-center">
+    <h2>Welcome to Salary Management App</h2>
+
+    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <a class="btn" style="color: white; background-color: blue; text-decoration: none; margin-top: 12px !important; margin-bottom: 12px !important;" asp-area="" asp-controller="Login" asp-action="Login">Login</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="btn" style="color: white; background-color: blue; text-decoration: none; margin-bottom: 12px !important;" asp-area="" asp-controller="Login" asp-action="SignUp">Sign Up</a>
+            </li>
+        </ul>
+    </div>
 </div>

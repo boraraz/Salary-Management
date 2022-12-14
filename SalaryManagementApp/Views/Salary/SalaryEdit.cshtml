@@ -1,0 +1,46 @@
+﻿@model Salary;
+@{
+    ViewData["Title"] = "Salary Edit Page";
+}
+
+
+
+<a class="btn justify-content-start" style="text-decoration: none; color: saddlebrown; background-color: #A6D1E6; " asp-controller="Salary" asp-action="SalarySettings">Back</a>
+<form method="post">
+    <div class="text-start">
+        <div class="mb-2 row border p-3 mt-4">
+            <div class="row pb-2">
+                <h2 style="color:saddlebrown;">Salary Add</h2>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <label>Salary From</label>
+                <input asp-for="SalaryFrom" type="text" class="form-control" id="username" autofocus>
+                <span asp-validation-for="SalaryFrom" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Salary To</label>
+                <input asp-for="SalaryTo" type="text" class="form-control" id="inputType">
+                <span asp-validation-for="SalaryTo" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Tax</label>
+                <input asp-for="Tax" type="text" class="form-control" id="inputPassword">
+                <span asp-validation-for="Tax" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Yearly Bonus %</label>
+                <input asp-for="YearlyBonusPercentage" type="text" class="form-control" id="inputQuantity">
+                <span asp-validation-for="YearlyBonusPercentage" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn" style="color: saddlebrown; background-color: #A6D1E6; text-decoration: none ">Save Changes</button>
+        </div>
+    </div>
+</form>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

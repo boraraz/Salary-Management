@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using SalaryManagementApp.Data;
 using SalaryManagementApp.Models;
 
 namespace SalaryManagementApp.Controllers;
@@ -12,7 +13,7 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
+    
     public IActionResult Index()
     {
         return View();

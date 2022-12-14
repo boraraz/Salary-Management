@@ -11,15 +11,13 @@ namespace SalaryManagementApp.Models
 		public int SId { get; set; }
 		[Required]
 
-		public Employee Name { get; set; }
-		[ForeignKey("Employee")]
+        public float Tax { get; set; }
 
-		public float Salry { get; set; }
-        [ForeignKey("Employee")]
+        public float SalaryFrom { get; set; }
 
-        public float tax { get; set; }
+        public float SalaryTo { get; set; }
 
-        public float NetSalary { get; set; }
+		public float YearlyBonusPercentage { get; set; }
     }
 }
 

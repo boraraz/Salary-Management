@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Salary>;
+@{
+    ViewData["Title"] = "Salary Settings Page";
+}
+
+
+<a class="btn justify-content-start" style="text-decoration: none; color: white; background-color: green;" asp-controller="HomePage" asp-action="HomePage">Back</a>
+<div>
+    <div class="text-center">
+        <h1 style="padding-bottom:8%; padding-top:15px" class="display-4">Salary Settings</h1>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Salary ID</th>
+                <th scope="col">Salary From</th>
+                <th scope="col">Salary To</th>
+                <th scope="col">Tax</th>
+                <th scope="col">Yearly Bonus Percentage</th>
+                <th>
+                    <a class="btn" style="color: white; background-color: green; text-decoration: none" asp-controller="Salary" asp-action="SalaryAdd">Add Salary</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td scope="col">@obj.SId</td>
+                    <td scope="col">@obj.SalaryFrom</td>
+                    <td scope="col">@obj.SalaryTo</td>
+                    <td scope="col">@obj.Tax</td>
+                    <td scope="col">@obj.YearlyBonusPercentage</td>
+                    <td>
+                        <a class="btn" style="color: black; background-color: yellow; text-decoration: none" asp-controller="Salary" asp-action="SalaryEdit" asp-route-SId="@obj.SId">Edit</a>
+                        <a class="btn" style="color: white; background-color: red; text-decoration: none" asp-controller="Salary" asp-action="SalaryDelete" asp-route-SId="@obj.SId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
